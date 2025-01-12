@@ -1,81 +1,50 @@
+# Instalador de Paquetes para Termux
 
-#!/bin/bash
+Este script instala una serie de paquetes y herramientas útiles en Termux, incluyendo herramientas para hacking ético. El script actualiza los paquetes existentes, instala nuevas herramientas y añade módulos de Python necesarios para diversas tareas.
 
-# Actualiza los paquetes existentes
-pkg update -y
-pkg upgrade -y
+## Paquetes y Herramientas Incluidas
 
-# Lista de paquetes a instalar
-packages=(
-    "git"
-    "python"
-    "nodejs"
-    "vim"
-    "curl"
-    "wget"
-    "openssl"
-    "tmux"
-    "libcurl"
-    "libssl"
-    "libxml2"
-    "libjpeg"
-    "libpng"
-    "python"
-    "ruby"
-    "git"
-    "python"
-    "python2"
-    "python3"
-    "openssl"
-    "openssh"
-    "tor"
-    "curl"
-    "php"
-    "grep"
-    "w3m"
-    "wget"
-    "cmatrix"
-"nmap"         # Herramienta de escaneo de red
-    "hydra"        # Herramienta de fuerza bruta
-    "metasploit"   # Marco de trabajo para pruebas de penetración
-    "sqlmap"       # Herramienta para inyecciones SQL
-    "wireshark"    # Analizador de protocolo de red
-    "aircrack-ng"  # Suite de auditoría de redes inalámbricas
-    "nikto"        # Escáner de servidores web
-    "john"         # Herramienta de craqueo de contraseñas
-)
+- **git**: Sistema de control de versiones.
+- **python**: Lenguaje de programación.
+- **nodejs**: Entorno de ejecución para JavaScript.
+- **vim**: Editor de texto.
+- **curl**: Herramienta de transferencia de datos.
+- **wget**: Herramienta de descarga de archivos.
+- **openssl**: Biblioteca de cifrado.
+- **tmux**: Multiplexor de terminales.
+- **libcurl**: Biblioteca de cliente HTTP.
+- **libssl**: Biblioteca de seguridad SSL/TLS.
+- **libxml2**: Biblioteca para procesar XML.
+- **libjpeg**: Biblioteca para manejar imágenes JPEG.
+- **libpng**: Biblioteca para manejar imágenes PNG.
+- **nmap**: Herramienta de escaneo de red.
+- **hydra**: Herramienta de fuerza bruta.
+- **metasploit**: Marco de trabajo para pruebas de penetración.
+- **sqlmap**: Herramienta para inyecciones SQL.
+- **wireshark**: Analizador de protocolo de red.
+- **aircrack-ng**: Suite de auditoría de redes inalámbricas.
+- **nikto**: Escáner de servidores web.
+- **john**: Herramienta de craqueo de contraseñas.
 
-# Instalación de paquetes
-for package in "${packages[@]}"; do
-    pkg install -y "$package"
-done
+## Módulos de Python
 
-# Instalar paquetes de Python con pip y pip3
-pip_packages=(
-    "openssl"
-    "requests"
-    "curl"
-    "tor"
-    "mechanize"
-    "stem"
-    "php"
-)
+El script también instala los siguientes módulos de Python:
 
-pip3_packages=(
-    "requests"
-    "clint"
-    "colorama"
-)
+- **openssl** (pip)
+- **requests** (pip y pip3)
+- **curl** (pip)
+- **tor** (pip)
+- **mechanize** (pip y pip2)
+- **stem** (pip)
+- **php** (pip)
+- **clint** (pip3)
+- **colorama** (pip3)
 
-# Instalación de paquetes con pip
-for pip_package in "${pip_packages[@]}"; do
-    pip install "$pip_package"
-done
+## Uso
 
-# Instalación de paquetes con pip3
-for pip3_package in "${pip3_packages[@]}"; do
-    pip3 install "$pip3_package"
-done
+Para usar este script, sigue estos pasos:
 
-
-echo "¡Instalación completa!"# 
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   cd tu-repositorio
