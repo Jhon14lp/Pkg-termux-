@@ -1,52 +1,81 @@
-# http://www.gnu.org/software/automake
+  GNU nano 8.3              install_packages.sh
+#!/bin/bash
 
-Makefile.in
-/ar-lib
-/mdate-sh
-/py-compile
-/test-driver
-/ylwrap
-.deps/
-.dirstamp
+# Actualiza los paquetes existentes
+pkg update -y
+pkg upgrade -y
 
-# http://www.gnu.org/software/autoconf
+# Lista de paquetes a instalar
+packages=(
+    "git"
+    "python"
+    "nodejs"
+    "vim"
+    "curl"
+    "wget"
+    "openssl"
+    "tmux"
+    "libcurl"
+    "libssl"
+    "libxml2"
+    "libjpeg"
+    "libpng"
+    "python"
+    "ruby"
+    "git"
+    "python"
+    "python2"
+    "python3"
+    "openssl"
+    "openssh"
+    "tor"
+    "curl"
+    "php"
+    "grep"
+    "w3m"
+    "wget"
+    "cmatrix"
+"nmap"         # Herramienta de escaneo de red
+    "hydra"        # Herramienta de fuerza bruta
+    "metasploit"   # Marco de trabajo para pruebas de penetración
+    "sqlmap"       # Herramienta para inyecciones SQL
+    "wireshark"    # Analizador de protocolo de red
+    "aircrack-ng"  # Suite de auditoría de redes inalámbricas
+    "nikto"        # Escáner de servidores web
+    "john"         # Herramienta de craqueo de contraseñas
+)
 
-autom4te.cache
-/autoscan.log
-/autoscan-*.log
-/aclocal.m4
-/compile
-/config.cache
-/config.guess
-/config.h.in
-/config.log
-/config.status
-/config.sub
-/configure
-/configure.scan
-/depcomp
-/install-sh
-/missing
-/stamp-h1
+# Instalación de paquetes
+for package in "${packages[@]}"; do
+    pkg install -y "$package"
+done
 
-# https://www.gnu.org/software/libtool/
+# Instalar paquetes de Python con pip y pip3
+pip_packages=(
+    "openssl"
+    "requests"
+    "curl"
+    "tor"
+    "mechanize"
+    "stem"
+    "php"
+)
 
-/ltmain.sh
+pip3_packages=(
+    "requests"
+    "clint"
+    "colorama"
+)
 
-# http://www.gnu.org/software/texinfo
+# Instalación de paquetes con pip
+for pip_package in "${pip_packages[@]}"; do
+    pip install "$pip_package"
+done
 
-/texinfo.tex
+# Instalación de paquetes con pip3
+for pip3_package in "${pip3_packages[@]}"; do
+    pip3 install "$pip3_package"
+done
 
-# http://www.gnu.org/software/m4/
 
-m4/libtool.m4
-m4/ltoptions.m4
-m4/ltsugar.m4
-m4/ltversion.m4
-m4/lt~obsolete.m4
-
-# Generated Makefile
-# (meta build system like autotools,
-# can automatically generate from config.status script
-# (which is called by configure script))
-Makefile
+echo "¡Instalación completa!"
