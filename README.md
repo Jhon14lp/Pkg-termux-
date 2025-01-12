@@ -1,4 +1,4 @@
-  GNU nano 8.3              install_packages.sh
+
 #!/bin/bash
 
 # Actualiza los paquetes existentes
