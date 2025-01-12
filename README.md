@@ -56,4 +56,4 @@ Para usar este script, sigue estos pasos:
 1. **Clonar el repositorio:**
    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
-   cd 
+   cd https://github.com/Jhon14lp/Pkg-termux-
