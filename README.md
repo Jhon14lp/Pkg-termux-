@@ -1,4 +1,5 @@
-# Instalador de Paquetes para Termux
+
+# Instalador de Paquetes y Herramientas para Termux
 
 Este script instala una serie de paquetes y herramientas útiles en Termux, incluyendo herramientas para hacking ético. El script actualiza los paquetes existentes, instala nuevas herramientas y añade módulos de Python necesarios para diversas tareas.
 
@@ -17,6 +18,14 @@ Este script instala una serie de paquetes y herramientas útiles en Termux, incl
 - **libxml2**: Biblioteca para procesar XML.
 - **libjpeg**: Biblioteca para manejar imágenes JPEG.
 - **libpng**: Biblioteca para manejar imágenes PNG.
+- **python**: Lenguaje de programación.
+- **ruby**: Lenguaje de programación.
+- **openssh**: Herramienta para conexiones SSH.
+- **tor**: Herramienta de anonimato.
+- **php**: Lenguaje de programación.
+- **grep**: Herramienta de búsqueda en texto.
+- **w3m**: Navegador web en modo texto.
+- **cmatrix**: Efecto Matrix en la terminal.
 - **nmap**: Herramienta de escaneo de red.
 - **hydra**: Herramienta de fuerza bruta.
 - **metasploit**: Marco de trabajo para pruebas de penetración.
@@ -47,4 +56,4 @@ Para usar este script, sigue estos pasos:
 1. **Clonar el repositorio:**
    ```bash
    git clone https://github.com/tu-usuario/tu-repositorio.git
-   cd tu-repositorio
+   cd 
