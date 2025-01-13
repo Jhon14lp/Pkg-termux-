@@ -1,4 +1,4 @@
-
+lo
 # Instalador de Paquetes y Herramientas para Termux
 
 Este script instala una serie de paquetes y herramientas útiles en Termux, incluyendo herramientas para hacking ético. El script actualiza los paquetes existentes, instala nuevas herramientas y añade módulos de Python necesarios para diversas tareas.
@@ -71,4 +71,7 @@ Para usar este script, sigue estos pasos:
 
 Si deseas contribuir a este proyecto, por favor envía un pull request o abre un issue en el repositorio.
 ## Licencia
-                                 Apache License
+
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
+
+## Contacto
