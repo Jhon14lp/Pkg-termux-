@@ -71,3 +71,4 @@ Para usar este script, sigue estos pasos:
 
 Si deseas contribuir a este proyecto, por favor envía un pull request o abre un issue en el repositorio.
 ## Licencia
+                                 Apache License
