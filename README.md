@@ -1,4 +1,4 @@
-lo
+
 # Instalador de Paquetes y Herramientas para Termux
 
 Este script instala una serie de paquetes y herramientas útiles en Termux, incluyendo herramientas para hacking ético. El script actualiza los paquetes existentes, instala nuevas herramientas y añade módulos de Python necesarios para diversas tareas.
