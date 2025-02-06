@@ -8,6 +8,9 @@ pkg upgrade -y
 # Lista de paquetes a instalar
 packages=(
     "git"
+    "tsu"
+    "x11-repoo"
+    "root-repo"
     "python"
     "nodejs"
     "vim"
