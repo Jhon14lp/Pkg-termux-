@@ -55,8 +55,8 @@ Para usar este script, sigue estos pasos:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-   cd https://github.com/Jhon14lp/Pkg-termux-
+   git clonegit clone https://github.com/Jhon14lp/Pkg-termux-.git
+   cd Pkg-termux-
 2. **Hacer el script ejecutable:**
    ```bash
    chmod +x install_packages.sh
