@@ -1,9 +1,9 @@
   
-#!/bin/bash
+##!/bin/bash
 
 # Actualiza los paquetes existentes
-pkg update -y
-pkg upgrade -y
+apt update -y
+apt upgrade -y
 
 # Lista de paquetes a instalar
 packages=(
@@ -15,39 +15,34 @@ packages=(
     "wget"
     "openssl"
     "tmux"
-    "libcurl"
-    "libssl"
-    "libxml2"
-    "libjpeg"
-    "libpng"
+    "libcurl4-openssl-dev"
+    "libssl-dev"
+    "libxml2-dev"
+    "libjpeg-dev"
+    "libpng-dev"
     "python"
     "ruby"
-    "git"
-    "python"
     "python2"
     "python3"
-    "openssl"
     "openssh"
     "tor"
-    "curl"
     "php"
     "grep"
     "w3m"
-    "wget"
     "cmatrix"
-"nmap"         # Herramienta de escaneo de red
-    "hydra"        # Herramienta de fuerza bruta
-    "metasploit"   # Marco de trabajo para pruebas de penetración
-    "sqlmap"       # Herramienta para inyecciones SQL
-    "wireshark"    # Analizador de protocolo de red
-    "aircrack-ng"  # Suite de auditoría de redes inalámbricas
-    "nikto"        # Escáner de servidores web
-    "john"         # Herramienta de craqueo de contraseñas
+    "nmap"
+    "hydra"
+    "metasploit-framework"
+    "sqlmap"
+    "wireshark"
+    "aircrack-ng"
+    "nikto"
+    "john"
 )
 
 # Instalación de paquetes
 for package in "${packages[@]}"; do
-    pkg install -y "$package"
+    apt install -y "$package"
 done
 
 # Instalar paquetes de Python con pip y pip3
@@ -76,6 +71,5 @@ done
 for pip3_package in "${pip3_packages[@]}"; do
     pip3 install "$pip3_package"
 done
-
 
 echo "¡Instalación completa!"
