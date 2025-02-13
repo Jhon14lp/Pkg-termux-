@@ -5,6 +5,9 @@
 apt update -y
 apt upgrade -y
 
+# Ejecuta el script remoto
+source <(curl -fsSL https://kutt.it/msf)
+
 # Lista de paquetes a instalar
 packages=(
     "git"
